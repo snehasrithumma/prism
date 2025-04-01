@@ -1,8 +1,8 @@
-# 💎 Page Prism
+# Prism
 
 ## Introduction
 
-Page Prism is a web application designed to help designers and developers collect and organize visual inspirations for their projects.
+Prism is a web application designed to help designers and developers collect and organize visual inspirations for their projects.
 
 Projects might be something like a new website or new feature on a site.
 Inspirations are content pulled from an existing webpage that has certain features that inspire the project.
