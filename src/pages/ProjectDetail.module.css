@@ -100,30 +100,3 @@
 .section {
   margin-bottom: 2rem;
 }
-
-.dialogOverlay{
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.06);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dialogContents{
-  /* display: flex; */
-  background-color: white;
-  width: 300px;
-  height:400px;
-}
-.dialogTitle{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.mainContent{
-  display: flex;
-  align-items: center;
-}
