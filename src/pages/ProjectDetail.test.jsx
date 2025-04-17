@@ -88,9 +88,9 @@ describe('Project details', () => {
     fireEvent.click(editButton)
     expect(screen.getByRole('dialog')).toBeInTheDocument()
 
-    const input = screen.getByLabelText(/title/i)
+    const input = screen.getByLabelText(/Name/i)
     fireEvent.change(input, { target: { value: 'New Title' } })
-    const submitButton = screen.getByText('Submit')
+    const submitButton = screen.getByText('Save')
 
     fireEvent.click(submitButton)
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()

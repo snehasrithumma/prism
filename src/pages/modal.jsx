@@ -29,7 +29,7 @@ export default function Modal({ project, isOpen, onSave, onClose }) {
         <div className={styles.dialogHeader}>
           <h2>Edit Project Details</h2>
           <Button className={styles.closeButton} onClick={onClose}>
-            x
+            X
           </Button>
         </div>
         <div className={styles.dialogBody}>

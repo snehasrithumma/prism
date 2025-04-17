@@ -11,7 +11,7 @@ describe('Modal tests', () => {
   test('Modal renders correctly when open is true', () => {
     render(<Modal project={mockProjectData} isOpen={true} />)
     expect(screen.getByRole('dialog')).toBeInTheDocument()
-    expect(screen.getByText('Edit Project')).toBeInTheDocument()
+    expect(screen.getByText('Edit Project Details')).toBeInTheDocument()
   })
 
   test('Should not render model when open is false', () => {
@@ -25,7 +25,7 @@ describe('Modal tests', () => {
     render(
       <Modal project={mockProjectData} isOpen={true} onClose={handleClose} />
     )
-    expect(screen.getByText('Edit Project')).toBeInTheDocument()
+    expect(screen.getByText('Edit Project Details')).toBeInTheDocument()
     const closeButton = screen.getByText('X')
     fireEvent.click(closeButton)
 
@@ -43,9 +43,9 @@ describe('Modal tests', () => {
         onClose={handleClose}
       />
     )
-    const input = screen.getByLabelText(/title/i)
+    const input = screen.getByLabelText(/Name/i)
     fireEvent.change(input, { target: { value: 'New Title' } })
-    const submitButton = screen.getByText('Submit')
+    const submitButton = screen.getByText('Save')
 
     fireEvent.click(submitButton)
     expect(handleSave).toHaveBeenCalledTimes(1)
